@@ -38,18 +38,8 @@ app.use(cors());
 // }
 
 app.get('/', (req,res)=>{
-  app.use(express.static('client/build'), function(err) {
-    if (err) {
-        res.send('error express file')
-    }
-});
+        res.send('hello');})
 
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'), function(err) {
-        if (err) {
-            res.send('error sendding file')
-        }
-    });
-})
 app.post('/tinder/card', (req,res)=>{
     const dbCard= req.body;
 
