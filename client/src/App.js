@@ -11,7 +11,7 @@ function App() {
     <div className="app">
      <Header/>
      <TinderCards/>
-     <SwipeButtons/>
+     {/* <SwipeButtons/> */}
     </div>
   );
 }
